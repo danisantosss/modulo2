@@ -10,7 +10,7 @@ public class App2 {
         System.out.println(animal.hashCode());
         //SUBCLASSE
         Mamifero mamifero = new Mamifero();
-        mamifero.setSexo("masculino");
+        mamifero.setSexo("helicóptero de combate");
         mamifero.setGeraleite(false);
         System.out.println(mamifero.getClass());
         System.out.println(mamifero.hashCode());
