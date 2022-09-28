@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 import sistema.entity.Cliente;
 import sistema.service.ClienteService;
-import sistema.view.FormularioCliente;
+//import sistema.view.FormularioCliente;
 import sistema.view.ListagemCliente;
 
 public class ListagemClienteController implements ActionListener{
@@ -44,7 +44,7 @@ public class ListagemClienteController implements ActionListener{
     private void btnNovoClique(){
         //JOptionPane.showMessageDialog(null, "BOTAO NOVO");
         Cliente novoCliente = new Cliente();
-        FormularioCliente formulario = new FormularioCliente(novoCliente);
+        //FormularioCliente formulario = new FormularioCliente(novoCliente);
         service.save(novoCliente);
         view.atualizaTabela();
     }
@@ -52,7 +52,7 @@ public class ListagemClienteController implements ActionListener{
         //JOptionPane.showMessageDialog(null, "BOTAO ALTERAR");    
         var clienteClicado = view.getCliente();
         if(clienteClicado != null){
-            FormularioCliente formulario = new FormularioCliente(clienteClicado);
+            //FormularioCliente formulario = new FormularioCliente(clienteClicado);
             service.save(clienteClicado);
             view.atualizaTabela();
         }
